@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <p className="text-slate-400 text-xs md:text-sm leading-relaxed">
+          <p className="text-slate-300 text-xs md:text-sm leading-relaxed">
             Leading the ecological cleaning industry since 2018. Delivering high-contrast sparkling homes and trusted commercial facilities across the core metro suburbs. Fully Bonded & Insured.
           </p>
 
@@ -65,7 +65,7 @@ export default function Footer() {
           <h3 className="font-sans font-bold text-white text-sm uppercase tracking-widest border-b border-slate-800 pb-3 mb-4">
             Operating Hours
           </h3>
-          <ul className="space-y-3 text-xs md:text-sm">
+          <ul className="space-y-3 text-xs md:text-sm text-slate-300">
             <li className="flex items-center justify-between">
               <span>Monday – Friday:</span>
               <span className="text-white font-semibold">7:00 AM – 8:00 PM</span>
@@ -78,7 +78,7 @@ export default function Footer() {
               <span>Sunday Emergencies:</span>
               <span className="text-sky-400 font-extrabold text-xs">9:00 AM – 4:00 PM</span>
             </li>
-            <li className="flex items-start gap-1 pb-1 pt-1.5 text-[11px] text-slate-500 border-t border-slate-800">
+            <li className="flex items-start gap-1 pb-1 pt-1.5 text-[11px] text-slate-400 border-t border-slate-800">
               <Clock className="w-3.5 h-3.5 inline text-sky-500 shrink-0 mt-0.5" />
               <span>Emergency after-hour commercial dispatches available under Contract.</span>
             </li>
@@ -123,10 +123,10 @@ export default function Footer() {
             <li className="flex items-start gap-2.5">
               <Phone className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
               <div>
-                <a href="tel:+18005550199" className="text-white font-bold hover:text-sky-305 transition-colors">
+                <a href="tel:+18005550199" className="text-white font-bold hover:text-sky-300 transition-colors">
                   (800) 555-0199
                 </a>
-                <p className="text-[10px] text-slate-500 mt-0.5">Toll-free customer scheduler</p>
+                <p className="text-[10px] text-slate-400 mt-0.5">Toll-free customer scheduler</p>
               </div>
             </li>
 
@@ -136,7 +136,7 @@ export default function Footer() {
                 <a href="mailto:bookings@spotlesshq.com" className="text-white hover:text-sky-300 transition-colors">
                   bookings@spotlesshq.com
                 </a>
-                <p className="text-[10px] text-slate-500 mt-0.5">Custom layout requests</p>
+                <p className="text-[10px] text-slate-400 mt-0.5">Custom layout requests</p>
               </div>
             </li>
 
@@ -144,8 +144,8 @@ export default function Footer() {
               <MapPin className="w-4 h-4 text-sky-400 shrink-0 mt-0.5" />
               <div>
                 <p className="text-white font-medium">Headquarters</p>
-                <p className="text-xs">742 Evergreen Terrace, Suite 100</p>
-                <p className="text-xs">Core Metro City, MC 90210</p>
+                <p className="text-slate-300 text-xs">742 Evergreen Terrace, Suite 100</p>
+                <p className="text-slate-300 text-xs">Core Metro City, MC 90210</p>
               </div>
             </li>
           </ul>

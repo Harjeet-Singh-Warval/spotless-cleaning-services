@@ -1,5 +1,5 @@
 import React from "react";
-import { Sparkles, CalendarCheck2, BadgeCheck, ShieldAlert, Star } from "lucide-react";
+import { Sparkles, CalendarCheck2, BadgeCheck, Star } from "lucide-react";
 
 export default function Hero() {
   const heroBgImage = "/src/assets/images/hero_clean_home_1782033285007.jpg";
@@ -19,6 +19,13 @@ export default function Hero() {
       });
     }
   };
+
+  const trustBadges = [
+    "Fully Insured & Bonded",
+    "Pet-Safe Eco-Friendly",
+    "100% Satisfaction Guarantee",
+    "Background-Checked Cleaners",
+  ];
 
   return (
     <header className="relative pt-24 pb-16 md:py-32 xl:py-40 bg-slate-50 overflow-hidden flex items-center min-h-[90vh]">
@@ -54,16 +61,16 @@ export default function Hero() {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-sans font-black tracking-tight text-slate-900 leading-[1.1]">
             Spotless Homes, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-500">
+            <span className="font-display italic text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-emerald-500">
               Stress-Free Living
             </span>
           </h1>
 
-          <p className="text-slate-600 mt-6 text-lg md:text-xl leading-relaxed">
-            Welcome back to the pure joy of a pristine environment. Our vetted, background-checked elite crew delivers carbon-neutral cleaning customized to your unique space. Insured, absolute satisfaction guaranteed.
+          <p className="text-slate-600 mt-5 text-lg md:text-xl leading-relaxed">
+            Our vetted, background-checked crew delivers carbon-neutral cleaning — insured and 100% satisfaction guaranteed.
           </p>
 
-          {/* Action container */}
+          {/* CTA Buttons */}
           <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
             <button
               onClick={handleScrollToQuote}
@@ -82,24 +89,17 @@ export default function Hero() {
             </a>
           </div>
 
-          {/* Mini features checklist */}
-          <div className="mt-10 pt-8 border-t border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-700">
-              <BadgeCheck className="w-5 h-5 text-sky-600 shrink-0" />
-              <span>Fully Insured & Bonded Crew</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-700">
-              <BadgeCheck className="w-5 h-5 text-sky-600 shrink-0" />
-              <span>Pet-Safe Eco-Friendly Products</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-700">
-              <BadgeCheck className="w-5 h-5 text-sky-600 shrink-0" />
-              <span>100% Satisfaction Guarantee</span>
-            </div>
-            <div className="flex items-center gap-2.5 text-sm font-semibold text-slate-700">
-              <BadgeCheck className="w-5 h-5 text-sky-600 shrink-0" />
-              <span>Background-Checked Cleaners</span>
-            </div>
+          {/* Trust badges — single horizontal row under CTAs */}
+          <div className="mt-6 flex flex-wrap gap-2">
+            {trustBadges.map((badge) => (
+              <span
+                key={badge}
+                className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-semibold px-3 py-1.5 rounded-full shadow-xs"
+              >
+                <BadgeCheck className="w-3.5 h-3.5 text-sky-500 shrink-0" />
+                {badge}
+              </span>
+            ))}
           </div>
         </div>
       </div>

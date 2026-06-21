@@ -220,7 +220,7 @@ export default function App() {
       <AboutUs />
 
       {/* Elegant Mini FAQ section because premium sites help resolve conversions */}
-      <section className="py-20 bg-sky-50/50">
+      <section className="py-28 bg-sky-50/50">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="text-xs font-extrabold uppercase tracking-widest text-sky-700 bg-sky-100/50 px-3 py-1 rounded-full">

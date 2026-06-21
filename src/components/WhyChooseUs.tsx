@@ -84,7 +84,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Dynamic Statistics Bar */}
-        <div className="mt-16 bg-sky-650 rounded-3xl py-10 px-8 text-white grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center shadow-lg relative overflow-hidden bg-sky-600">
+        <div className="mt-6 bg-sky-600 rounded-3xl py-10 px-8 text-white grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center shadow-lg relative overflow-hidden">
           {/* Subtle decoration */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-sky-500 rounded-full opacity-20 filter blur-3xl"></div>
 

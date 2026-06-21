@@ -464,7 +464,7 @@ export default function QuoteForm() {
             </form>
 
             {/* Right Estimator Card output: 5 columns */}
-            <div className="lg:col-span-12 xl:col-span-5 lg:order-last">
+            <div className="lg:col-span-5">
               <div className="bg-gradient-to-tr from-slate-900 via-sky-950 to-slate-900 rounded-3xl p-6 md:p-8 text-white shadow-2xl relative sticky top-24">
                 <div className="absolute top-4 right-4 bg-white/10 p-2.5 rounded-2xl backdrop-blur-xs text-white">
                   <Calculator className="w-6 h-6 text-sky-300" />

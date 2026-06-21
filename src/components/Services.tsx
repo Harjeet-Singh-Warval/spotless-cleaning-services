@@ -188,24 +188,36 @@ export default function Services() {
           })}
 
           {/* Combined CTA Block inside Grid to optimize space */}
-          <div className="bg-gradient-to-br from-sky-600 to-emerald-500 rounded-3xl p-8 text-white flex flex-col justify-between shadow-xl">
+          <div className="group relative bg-teal-50 border border-teal-100 rounded-3xl p-6 md:p-8 hover:shadow-2xl hover:border-teal-200 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
             <div>
-              <span className="text-[10px] font-bold bg-white/20 text-white px-2.5 py-1 rounded-md uppercase tracking-wider">
-                Flexible Service
-              </span>
-              <h3 className="font-sans font-black text-2xl text-white mt-4 leading-snug">
+              {/* Top Header Row — matches other cards */}
+              <div className="flex items-center justify-between mb-6">
+                <div className="w-12 h-12 rounded-2xl bg-teal-100 flex items-center justify-center">
+                  <Sparkles className="w-6 h-6 text-teal-600" />
+                </div>
+                <span className="text-[10px] font-extrabold bg-teal-100 text-teal-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+                  Flexible Service
+                </span>
+              </div>
+
+              <h3 className="font-sans font-extrabold text-xl text-slate-900 group-hover:text-teal-700 transition-colors duration-150">
                 Need a Custom Package for Your Facility?
               </h3>
-              <p className="text-sky-50 text-xs md:text-sm mt-3 leading-relaxed">
-                Whether you have multiple physical locations, require post-renovation cleanups, or have specific medical sanitization requirements, we build tailored custom schedules.
+              <p className="text-slate-500 text-sm leading-relaxed mt-3">
+                Multiple locations, post-renovation cleanups, or medical sanitization? We build tailored custom schedules around your exact requirements.
               </p>
             </div>
-            <button
-              onClick={handleBookNowJumper}
-              className="mt-8 w-full bg-white text-sky-950 font-extrabold py-3.5 rounded-2xl text-sm text-center shadow-md hover:bg-slate-50 cursor-pointer transition-all hover:scale-[1.01]"
-            >
-              Get Custom Quote Estimate
-            </button>
+
+            <div className="mt-8 pt-6 border-t border-teal-100 flex items-center justify-between">
+              <div className="text-slate-900 font-extrabold text-sm">Let's Talk</div>
+              <button
+                onClick={handleBookNowJumper}
+                className="flex items-center gap-1.5 text-xs font-bold text-teal-700 hover:text-teal-600 cursor-pointer"
+              >
+                <span>Get Custom Estimate</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
