@@ -1,0 +1,6 @@
+{
+  "name": "Spotless Cleaning Services",
+  "description": "A premium, modern website for residential and commercial cleaning with custom interactive booking, services overview, client testimonials, and built-in AI support chat.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
